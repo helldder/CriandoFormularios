@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Formulario</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>
+        Mentoria
+      </h1>
+  
+      <p>
+        Preencha o formulário abaixo para<br/>
+        agendar a sua mentoria.
+      </p>
+    </header>
+  
+    <form id="my-form">
+      <fieldset>
+        <legend>Informações pessoais</legend>
+        <div class="name2col">
+
+          <div class="input-wrapper">
+            <label for="event-fname">Nome</label>
+            <input type="text" 
+            id="event-fname"
+            placeholder="Digite seu Nome" 
+            required>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="event-lname">Sobrenome</label>
+            <input 
+            type="text" 
+            id="event-lname"
+            placeholder="Digite seu Sobrenome"
+            required>
+          </div>
+        </div>
+          
+        <div class="input-wrapper">
+          <label for="event-email">E-mail<span>(digite um email válido)</span></label>
+          <input 
+          type="email" 
+          id="event-email"
+          placeholder="Digite seu E-mail"
+          required>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-password">Senha<span>(mínimo 6 caracteres)</span></label>
+          <input 
+          type="password" 
+          id="event-password"
+          placeholder="Digite uma senha válida"
+          required
+          minlength="6">
+        </div>
+
+        
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do Mentor</legend>
+
+        <div class="input-wrapper">
+          <label for="event-mentor">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+          <input 
+          type="text" 
+          id="event-mentor"
+          placeholder="Digite o nome do seu mentor" 
+          required>
+        </div>
+  
+      </fieldset>
+
+      <fieldset>
+        <legend>Seus Horários Disponíveis</legend>
+        
+        <h2>Primeira mentoria</h2>
+
+        <div class="date3colf">
+          
+          
+          <div class="input-wrapper">
+            <label for="event-datef">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="text" id="event-datef"
+            onfocus="this.type='date'" 
+            placeholder="Digite a Data" required>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="event-beginf">Das</label>
+            <input type="text" id="event-beginf" 
+            onfocus="this.type='time'" 
+            placeholder="Digite a Hora Inicial" required>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="event-endf">Até</label>
+            <input type="text" id="event-endf" 
+            onfocus="this.type='time'" 
+            placeholder="Digite a Hora Final" required>
+          </div>
+        </div>
+
+        <h2>Segunda mentoria</h2>
+
+        <div class="date3cols">
+          
+          <div class="input-wrapper">
+            <label for="event-dates">Data<span>(DD/MM/AAAA)</span></label>
+            <input type="text" id="event-dates"
+            onfocus="this.type='date'" 
+            placeholder="Digite a Data" required>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="event-begins">Das</label>
+            <input type="text" id="event-begins" 
+            onfocus="this.type='time'"
+            placeholder="Digite a Hora Inicial" required>
+          </div>
+          
+          <div class="input-wrapper">
+            <label for="event-ends">Até</label>
+            <input type="text" id="event-ends" 
+            onfocus="this.type='time'"
+            placeholder="Digite a Hora Final" required>
+          </div>
+        </div>
+
+      </fieldset>
+
+    </form>
+    
+    <footer>
+      <button 
+      class="button" 
+      form="my-form">
+      Salvar
+
+    </button>
+    </footer>
+    
+  </div>
+ 
+</body>
+</html>
